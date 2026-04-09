@@ -119,9 +119,7 @@ a {
 
 .hero {
   padding: 4.5rem 1.25rem 3.5rem;
-  background:
-    radial-gradient(circle at top left, rgba(244, 213, 141, 0.18) 0, transparent 55%),
-    radial-gradient(circle at top right, rgba(56, 189, 248, 0.15) 0, transparent 55%);
+
 }
 
 .hero__content {
@@ -528,5 +526,110 @@ textarea:focus {
 
   .contact {
     grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+/* Two-column sticky layout */
+@media (min-width: 720px) {
+  .site-header { display: none; }
+
+  main {
+    display: grid;
+    grid-template-columns: 45% 55%;  /* give right side more room */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    align-items: start;
+    min-height: 100vh;
+  }
+
+  .hero {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;        /* vertically center */
+    padding: 2rem 2.5rem 2rem 0;
+  }
+
+  .sections-right {
+    border-left: 1px solid var(--border-subtle);
+    padding-left: 3rem;
+  }
+
+  .section { padding: 4rem 0; }
+  .section--alt { background: none; }
+
+  /* Fix H1 size — was too big */
+  .hero h1 {
+    font-size: 2rem !important;
+    line-height: 1.3;
+  }
+
+  /* 2-column project grid instead of 3 */
+  .projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Smaller card text */
+  .project-card {
+    font-size: 0.88rem;
+  }
+
+  .project-card h3 {
+    font-size: 0.95rem;
+  }
+}
+
+/* Hero nav (desktop only) */
+.hero__nav { display: none; }
+
+@media (min-width: 720px) {
+  .hero__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .hero__nav a {
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+    padding: 0.3rem 0;
+    width: fit-content;
+  }
+
+  .hero__nav a:hover { color: var(--primary); }
+}
+
+/* Social icons */
+.hero__socials {
+  display: flex;
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.hero__socials a {
+  color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.hero__socials a:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Hero meta pills — smaller on desktop */
+@media (min-width: 720px) {
+  .hero__meta {
+    margin-top: 1.5rem;
+    gap: 0.6rem;
+  }
+
+  .hero-pill {
+    padding: 0.45rem 0.75rem;
   }
 }

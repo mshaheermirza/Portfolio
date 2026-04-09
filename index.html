@@ -8,33 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-  rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-  rel="stylesheet"
-  />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-  rel="stylesheet"
-  />
-
-
-
 </head>
 <body>
+
+  <!-- Mobile-only header -->
   <header class="site-header">
     <nav class="nav">
       <div class="nav__logo">Shaheer Mirza</div>
-      <button class="nav__toggle" aria-label="Toggle navigation">
-        ☰
-      </button>
+      <button class="nav__toggle" aria-label="Toggle navigation">☰</button>
       <ul class="nav__links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -46,21 +30,49 @@
   </header>
 
   <main>
-    <!-- Hero -->
+
+    <!-- LEFT: Hero (sticky on desktop) -->
     <section id="hero" class="hero">
-      <div class="hero__content">
-        <div class="hero__main">
-          <p class="hero__tag">Full-Stack Developer & Automation Engineer</p>
-          <h1>Websites built with intent. Not a page builder in sight.</h1>
-          <p class="hero__text">
-            Hand-coded from scratch. Built around your business. No templates, no bloat — just a site that means something.
-          </p>
-          <div class="hero__actions">
-            <a href="#projects" class="btn">View selected work</a>
-            <a href="#contact" class="btn btn--outline">Discuss a project</a>
-          </div>
+      <div class="hero__main">
+        <p class="hero__tag">Full-Stack Developer & Automation Engineer</p>
+        <h1>Websites built with intent. Not a page builder in sight.</h1>
+        <p class="hero__text">
+          Hand-coded from scratch. Built around your business. No templates, no bloat — just a site that means something.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn">View selected work</a>
+          <a href="#contact" class="btn btn--outline">Discuss a project</a>
         </div>
 
+        <!-- Desktop nav -->
+        <nav class="hero__nav" aria-label="Section navigation">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Social links -->
+        <div class="hero__socials">
+          <a href="https://github.com/mshaheermirza" target="_blank" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mshaheermirza" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.22 0z"/>
+            </svg>
+          </a>
+          <a href="https://www.fiverr.com/mshaheermirza" target="_blank" aria-label="Fiverr">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-1.73c.07-.51.35-.81.78-.81.44 0 .67.28.75.81h.2zm-7.73-3.49v1.02h-.96v5.49h1.14v-5.49h1.03v-1.02h-1.03v-.4c0-.5.17-.65.63-.65h.4v-1.06h-.7c-.97 0-1.47.5-1.47 1.53v.58h-.96v1.02h.96v5.49h1.14v-5.49h-.18zm-4.49 6.51h1.14V12.4h-1.14v2.504zM7.7 12.4h-1.14v2.504H7.7V12.4zm0-2.42h-1.14v1.14H7.7v-1.14zm5.634 0h-1.14v1.14h1.14v-1.14zm5.63 0h-1.14v1.14h1.14v-1.14zm-8.45 2.42h-1.14v2.504h1.14V12.4zm-5.63 0H3.7v2.504h1.14V12.4z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Info pills -->
         <div class="hero__meta">
           <div class="hero-pill">
             <span class="hero-pill__label">Based in</span>
@@ -75,194 +87,175 @@
             <span class="hero-pill__value">Fiverr projects & collaborations</span>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- RIGHT: All scrollable sections -->
+    <div class="sections-right">
 
-    <!-- Projects -->
-    <section id="projects" class="section section--alt">
-      <div class="section__inner">
-        <h2>Projects</h2>
-        <p class="section__subtitle">
-  Here are example websites similar to what I can build for your business.
-</p>
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="section__inner">
+          <h2>Projects</h2>
+          <p class="section__subtitle">
+            Real work I've built — from frontend to backend to full automation systems.
+          </p>
 
-<article class="project-card">
-  <h3>Designers Zone — Frontend</h3>
-  <p>
-    Multi-language business website for a Lahore-based printing & trading company.
-    Multilingual support (EN/NL/FR/ES), responsive layout, and a custom contact form.
-  </p>
-  <p class="project-card__stack">HTML • CSS • JavaScript • i18n • Responsive</p>
-  <div class="project-card__links">
-    <a href="https://designers-zone.world" target="_blank">Live site</a>
-  </div>
-</article>
+          <div class="projects">
+            <article class="project-card">
+              <h3>Designers Zone — Frontend</h3>
+              <p>Multi-language business website for a Lahore-based printing & trading company. Multilingual support (EN/NL/FR/ES), responsive layout, and a custom contact form.</p>
+              <p class="project-card__stack">HTML • CSS • JavaScript • i18n • Responsive</p>
+              <div class="project-card__links">
+                <a href="https://designers-zone.world" target="_blank">Live site →</a>
+              </div>
+            </article>
 
-<article class="project-card">
-  <h3>Designers Zone — Backend API</h3>
-  <p>
-    Node.js/Express REST API that handles contact form submissions and stores
-    data in Supabase (PostgreSQL). Containerized with Docker, deployed on Render.
-  </p>
-  <p class="project-card__stack">Node.js • Express • Supabase • Docker • Render</p>
-  <div class="project-card__links">
-    <a href="https://github.com/mshaheermirza" target="_blank">Code</a>
-  </div>
-</article>
+            <article class="project-card">
+              <h3>Designers Zone — Backend API</h3>
+              <p>Node.js/Express REST API that handles contact form submissions and stores data in Supabase (PostgreSQL). Containerized with Docker, deployed on Render.</p>
+              <p class="project-card__stack">Node.js • Express • Supabase • Docker • Render</p>
+              <div class="project-card__links">
+                <a href="https://github.com/mshaheermirza" target="_blank">Code →</a>
+              </div>
+            </article>
 
-<article class="project-card">
-  <h3>Designers Zone — Automation System</h3>
-  <p>
-    Full contact automation pipeline — submissions sync to Google Sheets in real time,
-    trigger email notifications via Resend, and send auto-replies to clients.
-    Includes a private admin dashboard deployed on Vercel.
-  </p>
-  <p class="project-card__stack">Next.js • Google Sheets API • Resend • Vercel • Supabase</p>
-  <div class="project-card__links">
-    <a href="https://dz-dashboard-zeta.vercel.app/dashboard" target="_blank">Live dashboard</a>
-  </div>
-</article>
+            <article class="project-card">
+              <h3>Designers Zone — Automation System</h3>
+              <p>Full contact automation pipeline — submissions sync to Google Sheets in real time, trigger email notifications via Resend, and send auto-replies to clients. Includes a private admin dashboard on Vercel.</p>
+              <p class="project-card__stack">Next.js • Google Sheets API • Resend • Vercel • Supabase</p>
+              <div class="project-card__links">
+                <a href="https://dz-dashboard-zeta.vercel.app/dashboard" target="_blank">Live dashboard →</a>
+              </div>
+            </article>
 
-<article class="project-card">
-  <h3>Café Website</h3>
-  <p>
-    Three‑page site for a neighbourhood café with a clean home page,
-    focused menu, and visit page.
-  </p>
-  <p class="project-card__stack">HTML • CSS • JavaScript</p>
-  <div class="project-card__links">
-    <a href="https://mshaheermirza.github.io/cafe-site/" target="_blank">Live demo</a>
-    <a href="https://github.com/mshaheermirza/cafe-site" target="_blank">Code</a>
-  </div>
-</article>
+            <article class="project-card">
+              <h3>Café Website</h3>
+              <p>Three‑page site for a neighbourhood café with a clean home page, focused menu, and visit page.</p>
+              <p class="project-card__stack">HTML • CSS • JavaScript</p>
+              <div class="project-card__links">
+                <a href="https://mshaheermirza.github.io/cafe-site/" target="_blank">Live demo →</a>
+                <a href="https://github.com/mshaheermirza/cafe-site" target="_blank">Code →</a>
+              </div>
+            </article>
 
-<article class="project-card">
-  <h3>Personal Portfolio</h3>
-  <p>
-    Simple portfolio site for a freelancer to showcase services, projects,
-    and a clear contact section for new clients.
-  </p>
-  <p class="project-card__stack">HTML • CSS • JavaScript</p>
-  <div class="project-card__links">
-    <a href="#" target="_blank">Live demo</a>
-    <a href="#" target="_blank">Code</a>
-  </div>
-</article>
+            <article class="project-card">
+              <h3>Personal Portfolio</h3>
+              <p>Simple portfolio site for a freelancer to showcase services, projects, and a clear contact section for new clients.</p>
+              <p class="project-card__stack">HTML • CSS • JavaScript</p>
+              <div class="project-card__links">
+                <a href="#" target="_blank">Live demo →</a>
+                <a href="#" target="_blank">Code →</a>
+              </div>
+            </article>
 
-<article class="project-card">
-  <h3>SaaS/Product Landing Page</h3>
-  <p>
-    Landing page for a web app with feature highlights, pricing plans,
-    FAQ and call-to-action buttons to sign up.
-  </p>
-  <p class="project-card__stack">HTML • CSS • JavaScript • Responsive</p>
-  <div class="project-card__links">
-    <a href="https://mshaheermirza.github.io/saas-site/index.html" target="_blank">Live demo</a>
-    <a href="https://github.com/mshaheermirza/saas-site" target="_blank">Code</a>
-  </div>
-</article>
-
-        
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills / Services -->
-    <section id="skills" class="section">
-      <div class="section__inner">
-        <h2>Skills & Services</h2>
-        <p class="section__subtitle">
-          I design and code custom landing pages and one-page websites using HTML, CSS and JavaScript.
-        </p>
-
-        <div class="skills">
-          <div class="skills__group">
-            <h3>Technical skills</h3>
-            <ul>
-              <li>HTML5 & semantic, SEO‑friendly structure</li>
-              <li>Modern CSS (Flexbox, Grid, responsive layouts)</li>
-              <li>JavaScript for menus, animations, and forms</li>
-              <li>Node.js & Express REST APIs</li>
-              <li>Supabase (PostgreSQL) & database design</li>
-              <li>Next.js & React</li>
-              <li>API integrations (Google Sheets, Resend, Supabase)</li>
-              <li>JDocker, Vercel & Render deployment</li>
-            </ul>
-          </div>
-          <div class="skills__group">
-            <h3>What I can build for you</h3>
-            <ul>
-              <li>Business landing pages (cafés, salons, services, etc.)</li>
-              <li>Personal portfolio websites</li>
-              <li>Simple product / SaaS landing pages</li>
-              <li>Multi‑section one‑page sites for small businesses</li>
-              <li>Contact form automation with email + Google Sheets</li>
-              <li>Admin dashboards for managing client submissions</li>
-            </ul>
+            <article class="project-card">
+              <h3>SaaS / Product Landing Page</h3>
+              <p>Landing page for a web app with feature highlights, pricing plans, FAQ and call-to-action buttons to sign up.</p>
+              <p class="project-card__stack">HTML • CSS • JavaScript • Responsive</p>
+              <div class="project-card__links">
+                <a href="https://mshaheermirza.github.io/saas-site/index.html" target="_blank">Live demo →</a>
+                <a href="https://github.com/mshaheermirza/saas-site" target="_blank">Code →</a>
+              </div>
+            </article>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- Skills -->
+      <section id="skills" class="section section--alt">
+        <div class="section__inner">
+          <h2>Skills & Services</h2>
+          <p class="section__subtitle">
+            From hand-coded frontends to REST APIs and full automation pipelines.
+          </p>
 
-    <!-- About -->
-    <section id="about" class="section section--alt">
-      <div class="section__inner">
-        <h2>About me</h2>
-        <p>
-          I'm a full-stack developer and CS student based in Leuven, Belgium. I build
-          hand-coded websites, REST APIs, and automation systems for small businesses
-          and personal brands.
-        </p>
-        <p>
-          Most websites look the same because they're built the same way. I write every
-          line from scratch so your site actually feels like your business — fast, clean,
-          and yours alone.
-        </p>
-        <p>
-          Beyond frontend, I build backends with Node.js and Supabase, automate workflows
-          with Google Sheets and email APIs, and deploy everything on modern platforms
-          like Vercel and Render.
-        </p>
-
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="section__inner">
-        <h2>Contact</h2>
-        <p class="section__subtitle">
-  Tell me about your business and what kind of website you need, and I’ll reply with ideas and a quote.
-        </p>
-
-
-
-
-        <div class="contact">
-          <div class="contact__info">
-            <p>Email: <a href="mailto:shaheermirza23@gmail.com">shaheermirza23@gmail.com</a></p>
+          <div class="skills">
+            <div class="skills__group">
+              <h3>Technical skills</h3>
+              <ul>
+                <li>HTML5 & semantic, SEO‑friendly structure</li>
+                <li>Modern CSS (Flexbox, Grid, responsive layouts)</li>
+                <li>JavaScript for menus, animations, and forms</li>
+                <li>Node.js & Express REST APIs</li>
+                <li>Supabase (PostgreSQL) & database design</li>
+                <li>Next.js & React</li>
+                <li>API integrations (Google Sheets, Resend, Supabase)</li>
+                <li>Docker, Vercel & Render deployment</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>What I can build for you</h3>
+              <ul>
+                <li>Business landing pages (cafés, salons, services, etc.)</li>
+                <li>Personal portfolio websites</li>
+                <li>Simple product / SaaS landing pages</li>
+                <li>Multi‑section one‑page sites for small businesses</li>
+                <li>Contact form automation with email + Google Sheets</li>
+                <li>Admin dashboards for managing client submissions</li>
+              </ul>
+            </div>
           </div>
-
-          <form class="contact__form">
-            <div class="form__row">
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" />
-            </div>
-            <div class="form__row">
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="your@email.com" />
-            </div>
-            <div class="form__row">
-              <label for="message">Message</label>
-              <textarea id="message" rows="4" placeholder="Tell me about your project"></textarea>
-            </div>
-            <button type="submit" class="btn">Send message</button>
-          </form>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="section__inner">
+          <h2>About me</h2>
+          <p>
+            I'm a full-stack developer and CS student based in Leuven, Belgium. I build
+            hand-coded websites, REST APIs, and automation systems for small businesses
+            and personal brands.
+          </p>
+          <p>
+            Most websites look the same because they're built the same way. I write every
+            line from scratch so your site actually feels like your business — fast, clean,
+            and yours alone.
+          </p>
+          <p>
+            Beyond frontend, I build backends with Node.js and Supabase, automate workflows
+            with Google Sheets and email APIs, and deploy everything on modern platforms
+            like Vercel and Render.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section--alt">
+        <div class="section__inner">
+          <h2>Contact</h2>
+          <p class="section__subtitle">
+            Tell me about your business and what kind of website you need, and I'll reply with ideas and a quote.
+          </p>
+
+          <div class="contact">
+            <div class="contact__info">
+              <p>Email: <a href="mailto:shaheermirza23@gmail.com">shaheermirza23@gmail.com</a></p>
+            </div>
+
+            <form class="contact__form">
+              <div class="form__row">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name" />
+              </div>
+              <div class="form__row">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="your@email.com" />
+              </div>
+              <div class="form__row">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Tell me about your project"></textarea>
+              </div>
+              <button type="submit" class="btn">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- end .sections-right -->
+
   </main>
 
   <footer class="site-footer">
